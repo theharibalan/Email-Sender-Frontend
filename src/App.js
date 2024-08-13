@@ -110,7 +110,7 @@ export default function App() {
 
   const sendMail = async () => {
     const data = { sub: sub, content: content };
-    const url = "http://localhost:5000/send";
+    const url = "http://18.233.156.177:5000//send";
 
     axios
       .post(url, data)
@@ -129,7 +129,7 @@ export default function App() {
     formData.append("file", pdf);
 
     try {
-      const response = await axios.post("http://localhost:5000/pdfup", formData, {
+      const response = await axios.post("http://18.233.156.177:5000//pdfup", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -145,7 +145,7 @@ export default function App() {
     formData.append("file", file);
 
     try {
-      const response = await axios.post("http://localhost:5000/upload", formData, {
+      const response = await axios.post("http://18.233.156.177:5000//upload", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

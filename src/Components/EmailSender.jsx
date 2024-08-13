@@ -11,7 +11,7 @@ export default function EmailSender() {
     formData.append("file", file);
 
     const response = await axios.post(
-      "http://localhost:5000/upload",
+      "http://18.233.156.177:5000//upload",
       formData,
       {
         headers: {
